@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.home:hover {
+    color: aqua !important;
+}
+
+
+.hover-style:hover {
+    color: rgba(4, 252, 252, 0.699) !important;
+    transition: color 0.3s ease-in-out;
+}
+.logo{
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid aqua;
+}
+.left-landing-text h1,p,h4{
+    color: aliceblue;
+    text-align: left;
+    padding-left: 80px;
+}
+.offcanva{
+    margin-left: 80px;
+    border: none;
+    background-color: aqua;
+}
+
+
+.landing-page-img {
+    border-radius: 20px;
+    width: 280px;
+    height: 250px;
+    clip-path: inset(0); 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.progress{
+    background-color: aqua ;
+}
+.landing-right{
+    background-image: url(./profesional-img/blobs.gif) ;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .landing-left{
+    background-image: url(./profesional-img/width.gif) ;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+} */
+
+/* Animation creation for landing page */
+
+.drop-main {
+    display: flex;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+}
+.d {
+    opacity: 0;
+    animation: drop 0.4s linear forwards;
+    color: #00ffff;
+}
+.r {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.4s;
+    color: #99ffff;
+}
+.o {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.6s;
+    color: #ccffff;
+}
+.p {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.8s;
+    color:#99ffff;
+}
+.s {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.9s;
+    color: #99ffff;
+}
+.drop-main:hover .d, 
+.drop-main:hover .r, 
+.drop-main:hover .o, 
+.drop-main:hover .p, 
+.drop-main:hover .s {
+    text-decoration: underline #99ffff 4px;
+    transition: 2s;
+    animation: drop 0.4s linear forwards 0.9s;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    65% {
+        transform: translateY(-17px);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+ /* About style */
+ .about-left{
+   background-color: black;
+    
+ }
+ .about-right-text{
+    color: aliceblue;
+    text-align: left;
+    padding-left: 80px;
+ }
+ .skill-img{
+    position: static;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid red;
+ }
+ .about-left img {
+    width: 100%;  
+    max-width: 768px;  
+    height: auto;  
+    display: block; 
+    margin: auto; 
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+}
+
+.service-img {
+    width: 80px; 
+    height: 80px;
+    object-fit: contain; 
+}
+
+.service-h1{
+    color: aqua;
+    text-align: center;
+}
+.crd-btn{
+    border: none;
+    height: 30px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: #00ffff;
+}
+.card-text{
+    padding: 0;
+    position: sticky;
+}
+
+.contact-form {
+    background-color: #18191A;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+}
+.form-control {
+    background-color: #333;
+    color: white;
+    border: none;
+}
+.form-control::placeholder {
+    color: #aaa;
+}
+.btn-custom {
+    background-color: #00CFEA;
+    color: black;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-custom:hover {
+    background-color: #009eb3;
+    color: white;
+}
